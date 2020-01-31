@@ -1,0 +1,48 @@
+/* reset */
+body{
+    margin: 0px 0px;
+}
+
+
+/* header */
+h1{
+    background-color: #3e2723;
+    color: #fafafa;
+    margin: 0px;
+    padding: 5px;
+    text-align: center;
+}
+
+nav{
+    background-color: #757575;
+    color: #fafafa;
+    display: flex;
+    flex-direction: column;
+}
+
+nav div {
+    text-align: center;
+    border: black 1px solid;
+}
+
+
+/* footer */
+footer{
+    background-color: #212121;
+    color: #fafafa;
+    text-align: center;
+    padding: 1px;
+}
+
+
+/* media query */
+@media(min-width: 450px){
+    nav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    nav div {
+         flex-basis: 50%;
+    }
+}
