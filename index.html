@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,12 +9,16 @@
     <link rel="stylesheet" href="styles/header-footer.css">
     <link rel="stylesheet" href="styles/products.css">
     <link rel="stylesheet" href="styles/configuration.css">
+    <script src="script/helper.js"></script>
     <script src="script/data.js"></script>
-    <script src="script/index.js" type="module"></script>
+    <script src="script/product.js"></script>
+    <script src="script/configuration.js"></script>
+    <script src="script/index.js"></script>
 </head>
+
 <body>
     <header>
-        <h1>Control de ventas</h1>
+        <h2 class="title">Control de ventas</h2>
         <nav>
             <div id="productMenu">
                 <h3>Ventas</h3>
@@ -27,15 +32,17 @@
     <section>
         <section id="products">
         </section>
-        <section id="configuration" >
+        <section id="configuration">
         </section>
     </section>
 
-    <aside class="total">
-        <span>Total = S/. </span> <span id="total">0.00</span>
+    <aside id="total-container">
+        <span>Total = S/ </span> <span id="total">0.00</span>
     </aside>
 
-
+    <aside id="reset">
+        <h3>Reset</h3>
+    </aside>
 
     <footer>
         <h7>Todos los derechos reservados</h7>
