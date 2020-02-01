@@ -1,19 +1,27 @@
-#configuration{
+#configuration {
     display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-direction: column;
 }
 
-#configuration div{
+#configuration div {
+    display: -webkit-box;
     display: flex;
+    -webkit-box-pack: justify;
     justify-content: space-between;
 }
 
-input{
-    width: 20%;
+input {
+    width: 10%;
     padding: 10px;
-    font-size: 15px;
+    font-size: 16px;
 }
 
-#configuration div input:first-child{
-    width: 80%;
+#configuration div input:nth-child(1) {
+    margin: 10px auto;
+}
+
+#configuration div input:nth-child(2) {
+    width: 90%;
 }

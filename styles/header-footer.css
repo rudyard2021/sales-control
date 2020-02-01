@@ -1,22 +1,25 @@
-/* reset */
-body{
+   /* reset */
+   body {
     margin: 0px 0px;
 }
 
 
 /* header */
-h1{
-    background-color: #3e2723;
+.title {
+    background-color: #212121;
     color: #fafafa;
     margin: 0px;
-    padding: 5px;
+    padding: 10px;
     text-align: center;
 }
 
-nav{
-    background-color: #757575;
+nav {
+    background-color: #01579b;
     color: #fafafa;
+    display: -webkit-box;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
     flex-direction: column;
 }
 
@@ -26,37 +29,53 @@ nav div {
 }
 
 /*total*/
-.total{
-    background-color: #757575;
+#total-container {
+    background-color: #01579b;
     color: #fafafa;
-    padding: 20px;
     text-align: center;
+    padding: 10px;
+    bottom: 0px;
 }
 
-.total span{
+.sticky {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+#total-container span {
     font-size: x-large;
     font-weight: bold;
 
 }
 
+#reset {
+    padding: 1px;
+    background-color: #424242;
+    color: #fafafa;
+    text-align: center;
+}
+
 /* footer */
-footer{
+footer {
     background-color: #212121;
     color: #fafafa;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
 
 }
 
 
 /* media query */
-@media(min-width: 450px){
+@media(min-width: 450px) {
     nav {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
         flex-direction: row;
         justify-content: space-around;
     }
 
     nav div {
-         flex-basis: 50%;
+        flex-basis: 50%;
     }
 }

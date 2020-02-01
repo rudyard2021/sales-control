@@ -1,5 +1,3 @@
-import createElement from "./helper.js";
-
 // <div class="item">
     // <div class="add">
     //     <button id="add">+</button>
@@ -9,7 +7,7 @@ import createElement from "./helper.js";
     // <img src="#" alt="imagen">
 // </div>
 
-function newProduct(data){
+function newProduct(data) {
     let itemNode = createElement("item", null, "div");
     let addNode = createElement("add", null, "div");
     let addButton = createElement(null, null, "button");
@@ -26,7 +24,7 @@ function newProduct(data){
     itemNode.appendChild(priceNode);
 
     counterNode.appendChild(document.createTextNode("0"));
-    priceNode.innerHTML = data.price;
+    priceNode.innerHTML = data.price.toFixed(2);
     addButton.innerHTML = "+";
     subtractButton.innerHTML = "-";
     imageNode.src = data.img;
@@ -34,15 +32,18 @@ function newProduct(data){
 
     let totalNode = document.getElementById("total");
 
-    addButton.addEventListener("click", (e) =>{
+    function addProduct(e){
         let value = counterNode.innerHTML;
         let newValue = parseInt(value) + 1;
         counterNode.innerHTML = newValue;
 
         let total = parseFloat(totalNode.innerHTML)
-        total =  total + data.price;
-        totalNode.innerHTML = total;
-    });
+        total = total + data.price;
+        totalNode.innerHTML = total.toFixed(2);
+    }
+
+    addButton.addEventListener("click", addProduct);
+    imageNode.addEventListener("click", addProduct);
 
     subtractButton.addEventListener("click", (e) => {
         let value = counterNode.innerHTML;
@@ -51,12 +52,8 @@ function newProduct(data){
             return
         counterNode.innerHTML = newValue;
         let total = parseFloat(totalNode.innerHTML)
-        total =  total - data.price;
-        totalNode.innerHTML = total;
+        total = total - data.price;
+        totalNode.innerHTML = total.toFixed(2);
     });
     return itemNode;
 }
-
-
-
-export default newProduct;
