@@ -1,0 +1,46 @@
+#products{
+    background-color: #ffebee;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.item{
+    margin: 10px;
+}
+
+.add{
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.add button{
+    border: #bdbdbd 1px solid;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+}
+
+.counter{
+    margin: 0px 0px;
+    text-align: center;
+    border: #bdbdbd 1px solid;
+    border-radius: 10px;
+    width: 60%;
+}
+
+img{
+    width: 150px;
+}
+
+.price{
+    background-color: rgba(158, 158, 158, 0.7);
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+    position: relative;
+    top: -12%;
+}

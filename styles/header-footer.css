@@ -25,13 +25,27 @@ nav div {
     border: black 1px solid;
 }
 
+/*total*/
+.total{
+    background-color: #757575;
+    color: #fafafa;
+    padding: 20px;
+    text-align: center;
+}
+
+.total span{
+    font-size: x-large;
+    font-weight: bold;
+
+}
 
 /* footer */
 footer{
     background-color: #212121;
     color: #fafafa;
     text-align: center;
-    padding: 1px;
+    padding: 20px;
+
 }
 
 

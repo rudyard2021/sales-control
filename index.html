@@ -6,30 +6,39 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="styles/header-footer.css">
-    <link rel="stylesheet" href="styles/container.css">
-
+    <link rel="stylesheet" href="styles/products.css">
+    <link rel="stylesheet" href="styles/configuration.css">
+    <script src="script/data.js"></script>
+    <script src="script/index.js" type="module"></script>
 </head>
 <body>
     <header>
         <h1>Control de ventas</h1>
         <nav>
-            <div>
-                <h2>Ventas</h2>
+            <div id="productMenu">
+                <h3>Ventas</h3>
             </div>
-            <div>
-                <h2>Configuracion</h2>
+            <div id="configMenu">
+                <h3>Configuracion</h3>
             </div>
         </nav>
     </header>
-    <aside id="container">
-        <div>
-            <img src="#" alt="imagen">
-        </div>
+
+    <section>
+        <section id="products">
+        </section>
+        <section id="configuration" >
+        </section>
+    </section>
+
+    <aside class="total">
+        <span>Total = S/. </span> <span id="total">0.00</span>
     </aside>
+
+
+
     <footer>
-        <div>
-            <p>Todos los derechos reservados</p>
-        </div>
+        <h7>Todos los derechos reservados</h7>
     </footer>
 </body>
 </html>

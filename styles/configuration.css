@@ -1,0 +1,19 @@
+#configuration{
+    display: none;
+    flex-direction: column;
+}
+
+#configuration div{
+    display: flex;
+    justify-content: space-between;
+}
+
+input{
+    width: 20%;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#configuration div input:first-child{
+    width: 80%;
+}
